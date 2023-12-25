@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
+
+:root {
+  /* Font Family */
+  --ff-heading: 'Big Shoulders Display', sans-serif;
+  --ff-body: 'Outfit', sans-serif;
+
+  /* Font Weight */
+  --fw-300: 300;
+  --fw-900: 900;
+
+  /* Font Size */
+  --fs-heading-1: 3.75rem;
+  --fs-heading-2: 3.125rem;
+  --fs-subtitle-1: 3.125rem;
+  --fs-body-m: 1.125rem;
+  --fs-body-s: 1rem;
+
+  /* Line Height */
+  --lh-heading-1: 3.4375rem;
+  --lh-heading-2: 2.8125rem;
+  --lh-subtitle-1: 2.8125rem;
+  --lh-body-m: 1.75rem;
+  --lh-body-s: 1.625rem;
+
+  /* Colors */
+  --clr-gold: hsl(24, 56%, 63%);
+  --clr-almostblack: hsl(0, 0%, 8%);
+  --clr-darkgrey: hsl(0, 0%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.hero-title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs);
+}
+
+@media screen and (min-width: 767px) {
+  :root {
+    /* Font Size */
+    --fs-heading-1: 4.375rem;
+    --fs-heading-2: 3.4375rem;
+    --fs-subtitle-1: 3.125rem;
+    --fs-body-m: 1.125rem;
+    --fs-body-s: 1rem;
+
+    /* Line Height */
+    --lh-heading-1: 3.4375rem;
+    --lh-heading-2: 2.8125rem;
+    --lh-subtitle-1: 2.8125rem;
+    --lh-body-m: 1.75rem;
+    --lh-body-s: 1.625rem;
+  }
+}
+
+@media screen and (min-width: 1439px) {
+  :root {
+    /* Font Size */
+    --fs-heading-1: 6rem;
+    --fs-heading-2: 4.375rem;
+    --fs-subtitle-1: 3.75rem;
+    --fs-body-m: 1.375rem;
+    --fs-body-s: 1.125rem;
+
+    /* Line Height */
+    --lh-heading-1: 5.5rem;
+    --lh-heading-2: 4.375rem;
+    --lh-subtitle-1: 3.75rem;
+    --lh-body-m: 2rem;
+    --lh-body-s: 1.75rem;
+  }
+}
