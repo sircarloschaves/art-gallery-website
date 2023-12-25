@@ -54,11 +54,28 @@ svg {
 .hero-img {
   width: 100%;
   height: auto;
+  padding-inline: 0 !important;
+}
+
+.hero-content {
+  padding-inline: 1rem;
 }
 
 .hero-title {
   font-family: var(--ff-heading);
-  font-size: var(--fs);
+  font-size: var(--fs-heading-1);
+  line-height: var(--lh-heading-1);
+  text-transform: uppercase;
+  margin-block-start: 2rem;
+  color: var(--clr-almostblack);
+}
+
+.hero-text {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body-m);
+  line-height: var(--lh-body-m);
+  margin-block-start: 2rem;
+  color: var(--clr-darkgrey);
 }
 
 @media screen and (min-width: 767px) {
