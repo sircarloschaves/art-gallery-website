@@ -13,9 +13,9 @@
   <main>
 
     <picture class="hero-picture">
-      <source media="(min-width: 1439px)" srcset="assets/desktop/image-hero.jpg">
-      <source class="hero-img-tablet" media="(min-width: 767px)" srcset="assets/tablet/image-hero.jpg">
-      <img class="hero-img" src="assets/mobile/image-hero.jpg" alt="">
+      <source media="(min-width: 1439px)" srcset="assets/desktop/image-hero.jpg 1x, assets/desktop/image-hero@2x.jpg 2x">
+      <source class="hero-img-tablet" media="(min-width: 767px)" srcset="assets/tablet/image-hero.jpg 1x, assets/tablet/image-hero@2x.jpg 2x">
+      <img class="hero-img" srcset="assets/mobile/image-hero.jpg 1x, assets/mobile/image-hero@2x.jpg 2x" alt="">
     </picture>
 
     <section class="hero-section">
@@ -41,9 +41,9 @@
 
       <div class="grid-1">
         <picture class="picture-grid-1">
-          <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-1.jpg">
-          <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-1.jpg">
-          <img src="assets/mobile/image-grid-1.jpg" alt="">
+          <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-1.jpg 1x, assets/desktop/image-grid-1@2x.jpg 2x">
+          <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-1.jpg 1x, assets/tablet/image-grid-1@2x.jpg 2x">
+          <img srcset="assets/mobile/image-grid-1.jpg 1x, assets/mobile/image-grid-1@2x.jpg 2x" alt="" loading="lazy">
         </picture>
 
         <div class="grid-1-text">
@@ -58,17 +58,21 @@
 
       <div class="grid-2">
 
-        <picture class="picture-grid-2">
-          <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-2.jpg">
-          <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-2.jpg">
-          <img src="assets/mobile/image-grid-2.jpg" alt="">
-        </picture>
+        <div class="item-1">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-2.jpg 1x, assets/desktop/image-grid-2@2x.jpg 2x">
+            <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-2.jpg 1x, assets/tablet/image-grid-2@2x.jpg 2x">
+            <img srcset="assets/mobile/image-grid-2.jpg 1x, assets/mobile/image-grid-2@2x.jpg 2x" alt="" loading="lazy">
+          </picture>
+        </div>
 
-        <picture class="picture-grid-3">
-          <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-3.jpg">
-          <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-3.jpg">
-          <img src="assets/mobile/image-grid-3.jpg" alt="">
-        </picture>
+        <div class="item-2">
+          <picture>
+            <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-3.jpg">
+            <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-3.jpg 1x, assets/tablet/image-grid-3@2x.jpg 2x">
+            <img src="assets/mobile/image-grid-3.jpg" alt="" loading="lazy">
+          </picture>
+        </div>
 
         <div class="last-child">
           <h2 class="subtitle clr-white">Come &amp; be inspired</h2>
@@ -86,7 +90,7 @@
   </main>
 
   <footer class="footer">
-    <img src="assets/logo-light.svg" alt="Modern Art Gallery" class="logo">
+    <img src="assets/logo-light.svg" alt="Modern Art Gallery" class="logo" loading="lazy">
 
     <p class="footer-text">
       The Modern Art Gallery is free to all visitors and open seven days a week
