@@ -348,6 +348,11 @@ svg {
     --lh-body-s: 1.75rem;
   }
 
+  .hero-picture {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .content-section {
     padding-inline: 10.3125rem;
     margin-block-start: 30.9375rem;
@@ -378,8 +383,12 @@ svg {
     margin-block-start: 11.25rem;
   }
 
+  .footer .logo {
+    width: 159.57px;
+  }
+
   .footer .footer-text {
     padding-inline-start: 8.776875rem;
-    padding-inline-end: 21rem;
+    padding-inline-end: 17.5rem;
   }
 }
