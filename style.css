@@ -235,9 +235,6 @@ svg {
   }
   
   .hero-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: '. content';
     padding-inline: 2.5rem;
     margin-block-start: 9.0625rem;
     position: relative;
@@ -245,13 +242,23 @@ svg {
   }
 
   .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    '. herotitle'
+    '. textandbtn';
     padding-inline: 0;
-    grid-area: content;
   }
 
   .hero-title {
     margin-block-start: 0;
+    grid-area: herotitle;
   }
+
+  .hero-content .wrapper {
+    grid-area: textandbtn;
+  }
+
 
   .hero-text {
     margin-block-start: 3rem;
@@ -348,9 +355,52 @@ svg {
     --lh-body-s: 1.75rem;
   }
 
+  .hero-section {
+    padding-inline: 10.3125rem;
+  }
+
   .hero-picture {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .black-bg {
+    position: absolute;
+    width: 50%;
+    height: 800px;
+    background-color: var(--clr-almostblack);
+    top: 0;
+    left: 0;
+  }
+
+  .hero-title {
+    position: absolute;
+    color: var(--clr-white);
+  }
+
+  /* .hero-title.clr-dark {
+    position: absolute;
+    color: var(--clr-almostblack);
+  } */
+
+  .hero-content {
+    grid-template-areas: 'herotitle textandbtn';
+  }
+
+  .title-wrapper {
+    position: relative;
+  }
+
+  .hero-content .wrapper {
+    padding-inline-start: 13.25rem;
+  }
+
+  .hero-text {
+    margin-block-start: 0;
+  }
+
+  .cta-btn {
+    margin-block-start: 4rem;
   }
 
   .content-section {

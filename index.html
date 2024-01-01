@@ -12,27 +12,40 @@
 <body>
   <main>
 
-    <picture class="hero-picture">
-      <source media="(min-width: 1439px)" srcset="assets/desktop/image-hero.jpg 1x, assets/desktop/image-hero@2x.jpg 2x">
-      <source class="hero-img-tablet" media="(min-width: 767px)" srcset="assets/tablet/image-hero.jpg 1x, assets/tablet/image-hero@2x.jpg 2x">
-      <img class="hero-img" srcset="assets/mobile/image-hero.jpg 1x, assets/mobile/image-hero@2x.jpg 2x" alt="">
-    </picture>
+    <div class="hero-background">
+
+      <picture class="hero-picture">
+        <source media="(min-width: 1439px)"
+          srcset="assets/desktop/image-hero.jpg 1x, assets/desktop/image-hero@2x.jpg 2x">
+        <source class="hero-img-tablet" media="(min-width: 767px)"
+          srcset="assets/tablet/image-hero.jpg 1x, assets/tablet/image-hero@2x.jpg 2x">
+        <img class="hero-img" srcset="assets/mobile/image-hero.jpg 1x, assets/mobile/image-hero@2x.jpg 2x" alt="">
+      </picture>
+
+      <div class="black-bg"></div>
+    </div>
 
     <section class="hero-section">
 
       <div aria-hidden="true" class="hero-content">
-        <h1 class="hero-title">Modern <br> Art Gallery</h1>
+        <!-- <div class="title-wrapper"> -->
+          <h1 class="hero-title">Modern <br> Art Gallery</h1>
+          <!-- <h1 class="hero-title clr-dark">Modern <br> Art Gallery</h1> -->
+        <!-- </div> -->
 
-        <p class="hero-text">
-          The arts in the collection of the Modern Art Gallery all started
-          from a spark of inspiration. Will these pieces inspire you? Visit
-          us and find out.
-        </p>
+        <div class="wrapper">
+          <p class="hero-text">
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit
+            us and find out.
+          </p>
 
-        <a href="#location" class="cta-btn">
-          <span class="btn-text">Our location</span>
-          <img class="arrow-right" src="assets/icon-arrow-right.svg" alt="">
-        </a>
+          <a href="#location" class="cta-btn">
+            <span class="btn-text">Our location</span>
+            <img class="arrow-right" src="assets/icon-arrow-right.svg" alt="">
+          </a>
+        </div>
+
       </div>
 
     </section>
@@ -41,8 +54,10 @@
 
       <div class="grid-1">
         <picture class="picture-grid-1">
-          <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-1.jpg 1x, assets/desktop/image-grid-1@2x.jpg 2x">
-          <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-1.jpg 1x, assets/tablet/image-grid-1@2x.jpg 2x">
+          <source media="(min-width: 1439px)"
+            srcset="assets/desktop/image-grid-1.jpg 1x, assets/desktop/image-grid-1@2x.jpg 2x">
+          <source media="(min-width: 767px)"
+            srcset="assets/tablet/image-grid-1.jpg 1x, assets/tablet/image-grid-1@2x.jpg 2x">
           <img srcset="assets/mobile/image-grid-1.jpg 1x, assets/mobile/image-grid-1@2x.jpg 2x" alt="" loading="lazy">
         </picture>
 
@@ -60,16 +75,20 @@
 
         <div class="item-1">
           <picture>
-            <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-2.jpg 1x, assets/desktop/image-grid-2@2x.jpg 2x">
-            <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-2.jpg 1x, assets/tablet/image-grid-2@2x.jpg 2x">
+            <source media="(min-width: 1439px)"
+              srcset="assets/desktop/image-grid-2.jpg 1x, assets/desktop/image-grid-2@2x.jpg 2x">
+            <source media="(min-width: 767px)"
+              srcset="assets/tablet/image-grid-2.jpg 1x, assets/tablet/image-grid-2@2x.jpg 2x">
             <img srcset="assets/mobile/image-grid-2.jpg 1x, assets/mobile/image-grid-2@2x.jpg 2x" alt="" loading="lazy">
           </picture>
         </div>
 
         <div class="item-2">
           <picture>
-            <source media="(min-width: 1439px)" srcset="assets/desktop/image-grid-3.jpg 1x, assets/desktop/image-grid-3@2x.jpg 2x">
-            <source media="(min-width: 767px)" srcset="assets/tablet/image-grid-3.jpg 1x, assets/tablet/image-grid-3@2x.jpg 2x">
+            <source media="(min-width: 1439px)"
+              srcset="assets/desktop/image-grid-3.jpg 1x, assets/desktop/image-grid-3@2x.jpg 2x">
+            <source media="(min-width: 767px)"
+              srcset="assets/tablet/image-grid-3.jpg 1x, assets/tablet/image-grid-3@2x.jpg 2x">
             <img srcset="assets/mobile/image-grid-3.jpg 1x, assets/mobile/image-grid-3@2x 2x" alt="" loading="lazy">
           </picture>
         </div>
