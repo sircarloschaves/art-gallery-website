@@ -362,6 +362,7 @@ svg {
   .hero-picture {
     left: 50%;
     transform: translateX(-50%);
+    color: var(--clr-almostblack) !important;
   }
 
   .black-bg {
@@ -375,13 +376,10 @@ svg {
 
   .hero-title {
     position: absolute;
-    color: var(--clr-white);
+    /* background: linear-gradient(to right, var(--clr-white) 64%, var(--clr-almostblack) 36%);
+    background-clip: text;
+    -webkit-background-clip: text;  */
   }
-
-  /* .hero-title.clr-dark {
-    position: absolute;
-    color: var(--clr-almostblack);
-  } */
 
   .hero-content {
     grid-template-areas: 'herotitle textandbtn';
