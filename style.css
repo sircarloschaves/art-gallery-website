@@ -376,9 +376,6 @@ svg {
 
   .hero-title {
     position: absolute;
-    /* background: linear-gradient(to right, var(--clr-white) 64%, var(--clr-almostblack) 36%);
-    background-clip: text;
-    -webkit-background-clip: text;  */
   }
 
   .hero-content {
