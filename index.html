@@ -12,25 +12,22 @@
 <body>
   <main>
 
-    <div class="hero-background">
+    <picture class="hero-picture">
+      <source media="(min-width: 1439px)"
+        srcset="assets/desktop/image-hero.jpg 1x, assets/desktop/image-hero@2x.jpg 2x">
+      <source class="hero-img-tablet" media="(min-width: 767px)"
+        srcset="assets/tablet/image-hero.jpg 1x, assets/tablet/image-hero@2x.jpg 2x">
+      <img class="hero-img" srcset="assets/mobile/image-hero.jpg 1x, assets/mobile/image-hero@2x.jpg 2x" alt="">
+    </picture>
 
-      <picture class="hero-picture">
-        <source media="(min-width: 1439px)"
-          srcset="assets/desktop/image-hero.jpg 1x, assets/desktop/image-hero@2x.jpg 2x">
-        <source class="hero-img-tablet" media="(min-width: 767px)"
-          srcset="assets/tablet/image-hero.jpg 1x, assets/tablet/image-hero@2x.jpg 2x">
-        <img class="hero-img" srcset="assets/mobile/image-hero.jpg 1x, assets/mobile/image-hero@2x.jpg 2x" alt="">
-      </picture>
-
-      <div class="black-bg"></div>
-    </div>
+    <div class="black-bg"></div>
 
     <section class="hero-section">
 
       <div aria-hidden="true" class="hero-content">
-        <div class="title-wrapper">
-          <h1 class="hero-title">Modern <br> Art Gallery</h1>
-        </div>
+
+        <h1 class="hero-title">Modern <br> Art Gallery</h1>
+
 
         <div class="wrapper">
           <p class="hero-text">
